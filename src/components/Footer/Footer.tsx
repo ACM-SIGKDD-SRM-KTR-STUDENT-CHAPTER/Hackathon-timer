@@ -1,10 +1,6 @@
-import './footer.scss'
+import './footer.scss';
 
-interface SocialIconType {
-    socialicontype: SocialIconProps[]
-}
-
-export const FooterI = ({ socialicontype }: SocialIconType) => {
+export const FooterI = () => {
     return (
         <footer>
             <div className="social">
@@ -13,5 +9,5 @@ export const FooterI = ({ socialicontype }: SocialIconType) => {
                 </div>
             </div>
         </footer>
-    )
-}
+    );
+};
