@@ -2,7 +2,7 @@ import { CountdownTimer } from '@/components/CountdownTimer/CountdownTimer';
 import '../styles/main.scss';
 import moment from 'moment-timezone';
 import Image from 'next/image';
-const target = moment.tz('2024-06-26 08:00:00', 'Asia/Kolkata');
+const target = moment.tz('2024-09-15 08:00:00', 'Asia/Kolkata');
 import HackathonImage from "../images/banner.png"
 const timerLabels = ['days', 'hours', 'minutes', 'seconds'];
 
