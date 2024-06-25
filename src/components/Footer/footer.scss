@@ -3,16 +3,22 @@
 footer {
     width: 100vw;
     grid-row: 3 / 3;
-
+    .social__group h2 {
+        background-color: black; /* Light grey background, adjust as needed */
+        border: 1px solid black; /* Light grey border, adjust as needed */
+        border-radius: 8px; /* Rounded corners */
+        padding: 10px 20px; /* Padding inside the h2 element */
+        color: #57abd7;
+        box-shadow: 0 0 8px $acm-color; /* Add glow effect */
+      }
     .social {
         display: grid;
         place-content: center;
-        background-image: url('../../images/pattern-hills.svg');
+        background-image: url('../../images/lower-pattern.svg');
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
         height: 10.5rem;
-
         &__group {
             display: flex; // Changed from grid to flex
             justify-content: center; // Center horizontally
@@ -20,21 +26,18 @@ footer {
             gap: 2rem;
             max-width: 100%; // Ensure it takes full width
             color: white;
-
             &-icons {
                 height: 1.5rem;
                 width: 1.5rem;
                 transition: fill 0.3s;
             }
-
             h2 {
                 white-space: nowrap; // Prevent line breaks
             }
         }
     }
 }
-
 svg path:hover {
-    fill: $soft-red;
+    fill: $acm-color;
     cursor: pointer;
 }
