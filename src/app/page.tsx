@@ -1,22 +1,19 @@
 import { CountdownTimer } from '@/components/CountdownTimer/CountdownTimer';
-import '../styles/main.scss'
+import '../styles/main.scss';
+import moment from 'moment-timezone';
 
-// Calculate the target date in IST
-const targetDateIST = new Date('2024-06-25T15:35:00+05:30');
-
-// Convert IST to Washington, D.C. local time (EDT, UTC-4:00)
-const offsetISTtoEDT = (5 * 60 + 30) - 4 * 60; // Difference in minutes
-const targetDateWashingtonDC = new Date(targetDateIST.getTime() - offsetISTtoEDT * 60 * 1000);
+// Set the target date to June 25, 2024, at 3:15 PM in IST timezone
+const target = moment.tz('2024-06-25 15:45:00', 'Asia/Kolkata');
 
 const timerLabels = ['days', 'hours', 'minutes', 'seconds'];
 
-export default function Home() { 
-
+export default function Home() {
   return (
     <main className="container">
       <section>
           <h1>we&apos;re launching soon</h1>
-          <CountdownTimer targetDate={targetDateWashingtonDC.toISOString()} labels={timerLabels}/>
+          {/* Use target.toISOString() to pass the date in ISO format */}
+          <CountdownTimer targetDate={target.toISOString()} labels={timerLabels}/>
       </section>
     </main>
   );
