@@ -5,8 +5,8 @@ import { Red_Hat_Text } from "next/font/google";
 const inter = Red_Hat_Text({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Launch Countdown Timer",
-  description: "This app is built using NextJs, functions like a countdown timer",
+  title: "Hackathon Timer",
+  description: "Developed by Aditya Verma",
 };
 
 export default function RootLayout({
@@ -20,9 +20,8 @@ export default function RootLayout({
         <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon" />
       </head>
       <body className={inter.className}>
-        {children}
-        <FooterI 
-        />
+      {children}
+      <FooterI/>
       </body>
     </html>
   );

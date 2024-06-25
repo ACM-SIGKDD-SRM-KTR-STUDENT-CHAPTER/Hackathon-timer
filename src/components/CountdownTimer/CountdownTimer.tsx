@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react"
 import "./CountdownTimer.scss";
-
 interface CountdownTimerProps {
     targetDate: string // Format: 'YYYY-MM-DDTHH:mm:ss' - The target date and time for the countdown timer.
     labels: string[]
