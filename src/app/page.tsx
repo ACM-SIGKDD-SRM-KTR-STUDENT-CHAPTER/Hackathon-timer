@@ -3,7 +3,7 @@ import '../styles/main.scss';
 import moment from 'moment-timezone';
 
 // add 3 sec to be accurate
-const target = moment.tz('2024-06-25 16:10:00', 'Asia/Kolkata');
+const target = moment.tz('2024-06-26 08:00:03', 'Asia/Kolkata');
 
 const timerLabels = ['days', 'hours', 'minutes', 'seconds'];
 

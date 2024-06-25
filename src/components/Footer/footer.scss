@@ -10,7 +10,13 @@ footer {
         padding: 10px 20px; /* Padding inside the h2 element */
         color: #57abd7;
         box-shadow: 0 0 8px $acm-color; /* Add glow effect */
-      }
+        
+        /* Media query for devices with width less than or equal to 600px */
+        @media (max-width: 600px) {
+            font-size: 14px; /* Smaller font size */
+            padding: 5px 10px; /* Smaller padding */
+        }
+    }
     .social {
         display: grid;
         place-content: center;
@@ -26,11 +32,6 @@ footer {
             gap: 2rem;
             max-width: 100%; // Ensure it takes full width
             color: white;
-            &-icons {
-                height: 1.5rem;
-                width: 1.5rem;
-                transition: fill 0.3s;
-            }
             h2 {
                 white-space: nowrap; // Prevent line breaks
             }
