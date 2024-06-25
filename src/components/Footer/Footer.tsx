@@ -1,5 +1,4 @@
 import './footer.scss'
-import { SocialIcon, SocialIconProps } from '../SocialIcon'
 
 interface SocialIconType {
     socialicontype: SocialIconProps[]
