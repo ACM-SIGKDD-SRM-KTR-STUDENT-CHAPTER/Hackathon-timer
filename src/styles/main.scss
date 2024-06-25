@@ -1,0 +1,46 @@
+@use 'variables' as *;
+@use 'breakpoints' as *;
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    grid-template-rows: 8.75rem 1fr auto;
+    height: 100vh;
+    background: url('../images/bg-stars.svg'), linear-gradient(180deg, #1D1E28 0.12%, #261C2D 94.84%, #261A2D 100%);
+    font-size: .875rem;
+    perspective: 1000px;
+}
+
+main {
+    width: inherit;
+    text-align: center;
+    margin: auto;
+    grid-row: 2 / 3;
+    padding: 0 1.5rem;
+    padding-bottom: 10.1875rem;
+
+    @include breakpoint-768 {
+        padding-bottom: 9.4375rem;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: $font-weight;
+        font-size: 1.125rem;
+        color: $white;
+        letter-spacing: .3837rem;
+        padding-bottom: 3.375rem;
+
+        @include breakpoint-768 {
+            font-size: 1.375rem;
+            padding-bottom: 6.5rem;
+        }
+    }
+}
